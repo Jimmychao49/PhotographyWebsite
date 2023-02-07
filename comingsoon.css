@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Libre Franklin";
+}
+
+h2 {
+    font-size: 32px;
+    margin: 5% 0 5% 0;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    height: 30px;
+    display: inline;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: black;
+}
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    transition: color 0.5s;
+}
+
+nav li a:hover {
+    color: darkblue;
+}
+
+.navbrand {
+    padding-right: 50px;
+}
+/* comingsoon */
+.comingsoon {
+    height: 50vh;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    margin-top: 5%;
+    color: white;
+    background-color: black;
+    height: 320px;
+    padding: 0% 12.5% 0% 12.5%;
+}
+
+footer h1 {
+    text-align: center;
+    margin: 0;
+    height: 50px;
+    padding: 50px 0px 20px 0px;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    height: 20px;
+}
+
+.footerbox {
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    height: 160px;
+    width: 50%;
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    float: left;
+}
+
+.footerbox h5 {
+    text-align: right;
+    padding-right: 5px;
+    margin: 6px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footerbox h5:hover {
+    color: darkblue;
+}
+
+.footerbox p {
+    text-align: left;
+    padding-left: 5px;
+    font-weight: 100;
+}
