@@ -55,8 +55,17 @@ nav li a:hover {
 .comingsoon {
     height: 50vh;
     color: black;
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
+    padding: auto;
+}
+
+.comingsoon a {
+    transition: color 0.5s;
+}
+
+.comingsoon a:hover {
+    color: darkblue;
 }
 
 /* footer */
