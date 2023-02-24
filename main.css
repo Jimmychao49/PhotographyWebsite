@@ -8,6 +8,7 @@ body {
     padding: 0;
     font-family: "Libre Franklin";
     width: auto;
+    background-color: #FAF9F6;
 }
 
 h2 {
@@ -22,163 +23,272 @@ a {
 }
 
 /*navbar*/
-nav {
-    height: 10vh;
-    background-color: white;
-    margin: 0;
-    border-bottom: 1px solid black;
-    overflow: hidden;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 15px;
-    overflow: hidden;
-    background-color: white;
-}
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    padding: 5px 20px 5px 20px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-weight: 900;
-    transition: color 0.5s;
-}
-
-nav li a:hover {
-    color: darkblue;
-    border-bottom: 2px;
-}
-
-.navbrand {
-    text-align: center;
-    margin: 0;
-}
-
-@media only screen and (max-width: 1100px) {
-    nav {
-        background-color: white;
-        object-fit: center;
-        object-position: center;
+@media only screen and (min-width: 0px) and (max-width: 1030px) {
+    .navbar {
         width: 100%;
-        height: 8vh;
+        height: 50px;
+        margin-top: 10px;
         border-bottom: 1px solid black;
-        padding: auto;
-        margin: auto;
-    }
-}
-/* Highlight area*/
-.highlighted {
-    height: 75vh;
-    width: auto;
-    padding: 3vw 3vh 0 3vw;
-    margin-bottom: 20vh;
-    overflow: hidden;
-}
-
-.box1 {
-    border-left: 1px solid black;
-    display: block;
-    margin: 55vh 0 0 2vw;
-    padding: 5vh 0 0 0;
-    width: 15.5vw;
-    height: 5vw;
-    float: left;
-}
-
-.imgtext {
-    display: block;
-    font-family: "Libre Franklin";
-    margin: 0 2vw 0 2vw;
-    color: black;
-    float: left;
-    text-align: right;
-    font-weight: 100;
-}
-
-.box2 {
-    width: 65vw;
-    height: 75vh;
-    float: left;
-    border-radius: 10px;
-    background-image: url("images/London/2.jpg");
-    background-size: 120%;
-    background-position: center;
-    transition: background-size 1s;
-}
-
-.box2:hover {
-    background-size: 140%;
-}
-
-@media only screen and (max-width: 1030px) {
-    .highlighted {
-        height: 70vh;
-        padding: 5vw 3vw 0 3vw;
     }
 
-    .box1 {
-        display: inline;
-        margin: 3vw;
-        padding: 2vw;
-        width: 50%;
-        border-top: 1px solid black;
-        border-left: 0;
+    .navbrand {
+        width: 85%;
+        display:inline-block;
+        height: 20px;
+        margin: 0;
+        font-size: 10px;
     }
 
-    .box2 {
-        background-size: 170%;
-        height: 60vh;
+    .navbrand h1 {
+        padding-left: 5%;
+    }
+
+    .overlay {
+        height: 0;
         width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
     }
 
-    .imgtext {
-        display: inline;
-        padding: 0 1vw 0 1vw;
-        margin: 0;
-        float: left;
-        text-align: left;
-        border-left: 1px solid black;
-    }
+    .overlaymenu {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .overlay a {
+        padding: 20px;
+        text-decoration: none;
+        font-size: 36px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: navy;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
 }
 
-@media only screen and (max-width: 767px) {
-    .highlighted {
-        height: 65vh;
-        padding: 10vw 3vw 0 3vw;
+@media only screen and (min-width: 1030px) {
+    .navbar {
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    .navbrand {
+        width: 60%;
+        display:inline-block;
         margin: 0;
+        font-size: 10px;
+    }
+
+    .navbrand h1 {
+        padding-left: 5%;
+        transition: color 0.3s;
+    }
+
+    .navbrand h1:hover {
+        color: navy;
+    }
+
+    .overlay {
+        padding-right: 50px;
+        padding-top: 15px;
+        height: 100%;
+        display: inline-block;
+        float:right;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: navy;
+      }
+
+    .overlaycontent {
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+    }
+    .closebtn {
+        position: absolute;
+        top: -50px;
+        height: 0;
+        width: 0;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: -50px;
+        width: 0;
+        height: 0;
+    }
+
+}
+
+/* Highlight area*/
+@media only screen and (min-width: 0px) {
+    .highlighted {
+        display: grid;
+        max-height: 65vh;
+        padding: 10vw 3vw 0 3vw;
+        margin-bottom: 100px;
     }
 
     .box1 {
+        grid-row: 2;
         width: 90%;
-        border-left: 0;
+        height: auto;
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 100;
     }
 
     .imgtext {
+        color: gray;
+        display: inline;
+        margin: 0;
         border-left: 1px solid gray;
+        padding: 0 5px 0 5px;
     }
 
     .box2 {
-     width: 100%;
-    height: 70%;
-    float: left;
-    border-radius: 10px;
-    background-image: url("images/London/2.jpg");
-    background-size: 170%;
-    background-position: center;
-    transition: background-size 1s;
+        grid-row: 1;
+        width: 100%;
+        max-height: 300px;
+        float: left;
+    }
+
+    .box2 img {
+        max-height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .highlighted {
+        display: grid;
+        max-height: 65vh;
+        padding: 10vw 3vw 0 3vw;
+        margin-bottom: 300px;
+    }
+
+    .box1 {
+        grid-row: 2;
+        width: 80%;
+        height: auto;
+        padding-top: 10px;
+        padding-left: 40px;
+        border-top: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    .imgtext {
+        color: gray;
+        display: inline;
+        margin: 0;
+        border-left: 1px solid gray;
+        padding: 0  5px 0 5px;
+    }
+
+    .box2 {
+        grid-row: 1;
+        width: 100%;
+        max-height: 700px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .box2 img {
+        max-height: 700px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
     }
 
     .box2:hover {
         background-size: 250%;
     }
 }
+@media only screen and (min-width: 1030px) {
+    .highlighted {
+        display: grid;
+        width: 90%;
+        max-height: 65vh;
+        padding: 2vw 3vw 0 3vw;
+        margin: 0 auto 700px auto;
+    }
+
+    .box1 {
+        grid-row: 1;
+        grid-column: 2;
+        width: auto;
+        height: 70px;
+        padding-top: 10%;
+        padding-left: 0;
+        border-left: 3px solid black;
+        border-top: 0;
+        margin: auto 0 auto 10%;
+        text-align: left;
+        font-weight: 100;
+    }
+
+    .imgtext {
+        color: gray;
+        display: block;
+        margin: 0;
+        padding: 0 5px 0 5px;
+        border-bottom: 0;
+        font-size: 14px;
+        border-left: 0;
+    }
+
+    .box2 {
+        grid-row: 1;
+        width: auto;
+        max-height: 900px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .box2 img {
+        max-height: 900px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .box2:hover {
+        background-size: 250%;
+    }
+}
+
+
 
 .headlinetext {
     font-family: "Unna";
@@ -189,6 +299,10 @@ nav li a:hover {
 }/* END highlight area */
 
 .arrowup {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
     position: sticky;
     overflow: hidden;
     top: 90vh;
@@ -270,7 +384,7 @@ nav li a:hover {
     .showcaseimgbox {
         display: block;
         width: auto;
-        height: 300px;
+        max-height: 300px;
         overflow: hidden;
         margin: 0;
         border-radius: 10px;
@@ -278,7 +392,7 @@ nav li a:hover {
 
     .showcaseimgbox img {
         width: 100%;
-        height: 100%;
+        max-height: 300px;
     }
 }
 @media only screen and (max-height: 750px) {
@@ -316,26 +430,27 @@ nav li a:hover {
     }
 
     .showcasetextbox p {
+        display: block;
         border-top: 1px solid black;
         width: 80%;
-        padding-top: 1vh;
+        padding-top: 10px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        margin-top: 50px;
     }
 
     .showcaseimgbox {
-        display: block;
-        width: auto;
-        height: auto;
+        width: 100%;
+        max-height: 1000px;
         overflow: hidden;
         margin: 0;
-        border-radius: 10px;
     }
 
     .showcaseimgbox img {
         width: 100%;
-        height: auto;
+        max-height: 1000px;
+        border-radius: 10px;
     }
 }
 @media only screen and (max-height: 1000px) and (min-width: 767px) {
@@ -346,9 +461,14 @@ nav li a:hover {
 @media only screen and (min-width: 1030px) {
     .showcase {
         display: grid;
-        height: 150vh;
+        max-height: 200vh;
+        margin-bottom: 100px;
         overflow: hidden;
-        grid-gap: 20px;
+        grid-gap: 10px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        grid-auto-columns: 1fr;
     }
 
     .showcasebox1 {
@@ -390,7 +510,7 @@ nav li a:hover {
     .showcaseimgbox {
         display: block;
         max-width: 100%;
-        height: 70%;
+        max-height: 900px;
         overflow: hidden;
         margin: 0;
         border-radius: 10px;
@@ -399,7 +519,7 @@ nav li a:hover {
 
     .showcaseimgbox img {
         width: 100%;
-        height: 100%;
+        max-height: 900px;
     }
 }
 
@@ -692,7 +812,7 @@ nav li a:hover {
         margin-top: 5%;
         color: white;
         background-color: black;
-        height: 55vh;
+        height: 500px;
         padding: 0 10% 5% 10%;
         overflow: hidden;
     }
@@ -719,6 +839,7 @@ nav li a:hover {
     }
 
     .footerbox1 li {
+        display: inline;
         padding-top: 3vw;
     }
 
@@ -726,12 +847,17 @@ nav li a:hover {
         display: inline;
         color: white;
         width: auto;
-        font-size: 4vw;
+        font-size: 0;
         transition: color 0.3s;
     }
 
     .footerbox1 h5:hover {
         color: darkblue;
+    }
+
+    .footerbox1 a {
+        padding: 10px;
+        color: white;
     }
 
     .footerbox2 {
@@ -755,6 +881,10 @@ nav li a:hover {
         grid-row: 2;
         margin-top: 40px;
     }
+
+    .footerbox1 a {
+        color: black;
+    }
     .footerbox1 h5 {
         font-size: 18px;
         padding: 0;
@@ -766,7 +896,9 @@ nav li a:hover {
     }
 
     .footerbox2 {
-        font-size: 11px;
+        font-size: 20px;
         
     }
 }
+
+/*icons*/

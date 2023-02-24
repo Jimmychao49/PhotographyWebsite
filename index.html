@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Jimmy Chao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;500;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
@@ -13,13 +15,25 @@
 </head>
 
 <body>
-    <nav>
-        <div class="navbrand"><h1>Jimmy Chao</h1></div>
 
-    </nav>
+    <div class="navbar">
+        <a class="navbrand" href="index.html"><h1 >Jimmy Chao</h1></a>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlaymenu">
+                <a class="overlaycontent" href="#aboutme">About</a>
+                <a class="overlaycontent" href="#">Travel</a>
+                <a class="overlaycontent" href="#">Lifestyle</a>
+                <a class="overlaycontent" href="#contact">Contact</a>
+            </div>
+        </div>
+        <span class="hamburger" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+
+    </div>
 
     <div class="highlighted" id="highlighted">
-        <a href="london.html"><div class="box2"></div></a>
+        <a class="box2" href="london.html"><img src="images/London/2.jpg"></a>  
         <div class="box1">
             <p class="imgtext">30/01/2023</p>
             <p class="imgtext">London</p>
@@ -95,11 +109,12 @@
     <footer id="contact">
         <a href="#top" class="footerBrand"><h1>Jimmy Chao</h1></a>
         <ul class="footerbox1">
-            <li><a href="https://www.linkedin.com/in/jimmychao21"><i class="bi bi-linkedin"></i><h5>LinkedIn</h5></a></li>
-            <li><a href="https://github.com/Jimmychao49"><i class="bi bi-github"></i><h5>Github</h5></a></li>
-            <li><a href="index.html"><i class="bi bi-twitter"></i><h5>Twitter</h5></a></li>
-            <li><a href="https://www.instagram.com/jimmychao_/"><i class="bi bi-instagram"></i><h5>Instagram</h5></a></li>
-            <li><a href="index.html"><i class="bi bi-youtube"></i><h5>Youtube</h5></a></li>
+            <li><a href="https://www.linkedin.com/in/jimmychao21"><i class="fa fa-linkedin-square fa-2x"></i><h5>LinkedIn</h5></a></li>
+            <li><a href="https://github.com/Jimmychao49"><i class="fa fa-github fa-2x"></i><h5>Github</h5></a></li>
+            <li><a href="index.html"><i class="fa fa-twitter fa-2x"></i><h5>Twitter</h5></a></li>
+            <li><a href="https://www.instagram.com/jimmychao_/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <h5>Instagram</h5></a></li>
+            <li><a href="index.html"><i class="fa fa-youtube-play fa-2x"></i><h5>Youtube</h5></a></li>
         </ul>
 
         <div class="footerbox2">
