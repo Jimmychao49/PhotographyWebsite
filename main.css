@@ -177,6 +177,7 @@ a {
         width: 100%;
         max-height: 300px;
         float: left;
+        border-radius: 10px;
     }
 
     .box2 img {
@@ -184,6 +185,13 @@ a {
         width: 100%;
         border-radius: 10px;
         overflow: hidden;
+        transform: scale(1);
+        transition: transform 1s;
+        object-position: center;
+    }
+
+    .box2 img:hover {
+        transform: scale(1.2);
     }
 }
 @media only screen and (min-width: 767px) {
@@ -393,6 +401,14 @@ a {
     .showcaseimgbox img {
         width: 100%;
         max-height: 300px;
+        border-radius: 10px;
+        transform: scale(1);
+        transition: transform 1s;
+        object-position: center;
+    }
+
+    .showcaseimgbox img:hover {
+        transform: scale(1.2);
     }
 }
 @media only screen and (max-height: 750px) {
@@ -862,7 +878,7 @@ a {
 
     .footerbox2 {
         grid-row: 3;
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: center;
     }
 }
@@ -878,27 +894,32 @@ a {
     }
 
     .footerbox1 {
+        display: block;
         grid-row: 2;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .footerbox1 a {
+        display: block;
         color: black;
+        padding: 5px;
     }
     .footerbox1 h5 {
         font-size: 18px;
         padding: 0;
-
     }
 
     .footerbox1 li {
         padding-top: 1vw;
     }
 
+    .footerbox1 i {
+        width: 0;
+    }
+
     .footerbox2 {
-        font-size: 20px;
-        
+        text-align: center;
+        font-size: 10px;
+        margin: 0;
     }
 }
-
-/*icons*/
