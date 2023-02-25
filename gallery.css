@@ -195,11 +195,15 @@ a {
     header {
         height: 500px;
         width: 100%;
-        background-image: url("images/London/2.jpg");
         background-size: cover;
         background-position: center;
         margin-top: -70px;
         margin-bottom: 5%
+    }
+
+    header img {
+        height: 500px;
+        width: auto;
     }
 
     header h1 {
@@ -215,7 +219,6 @@ a {
 @media only screen and (min-width: 767px) {
     header {
         height: 100vh;
-        background-image: url("images/London/2.jpg");
         background-size: cover;
         background-position: center;
         margin-top: -71px;
@@ -258,7 +261,7 @@ a {
 @media only screen and (min-width: 767px) {
     .gallerygrid {
         display: grid;
-        max-height: 200vh;
+        max-height: 1000vh;
         margin: 2%;
         align-items: center;
         object-fit: center;
@@ -271,6 +274,7 @@ a {
         transform: scale(1);
         transition: transform 1s;
         object-position: center;
+        overflow:hidden;
     }
     
     .boximg:hover { transform: scale(1.2)}
