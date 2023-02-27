@@ -109,21 +109,30 @@ a {
     }
 
     .navbrand {
-        width: 60%;
-        display:inline-block;
-        margin: 0;
+        margin-left: 5%;
+        width: 150px;
+        height: 50px;
+        display: inline-block;
         font-size: 10px;
+        text-align: center;
+        transition: color 0.3s, background-color 0.3s, text-shadow 0.3s;
+        color: #FAF9F6;
+        background-color: none;
+        text-shadow: 1px 1px 10px #1B2617;
+        border-radius: 30px;
     }
 
     .navbrand h1 {
-        padding-left: 5%;
-        transition: color 0.3s;
-        color: #FAF9F6;
-        text-shadow: 1px 1px 10px #1B2617;
+        display: inline-block;
+        width: auto;
+        height: 30px;
+        text-align: center;
     }
 
-    .navbrand h1:hover {
-        color: #B8BDB5;
+    .navbrand:hover {
+        color: #1B2617;
+        background-color: #FAF9F6;
+        text-shadow: none;
     }
 
     .overlay {
@@ -133,16 +142,30 @@ a {
         float: right;
     }
 
+    .overlaymenu a {
+        color: #FAF9F6;
+        background-color: none;
+        transition: color 0.3s, background-color 0.3s, text-shadow 0.3s;
+        border-radius: 30px;
+        text-shadow: 1px 1px 10px #1B2617;
+    }
+
+    .overlaymenu a:hover {
+        color: #1B2617;
+        background-color: #FAF9F6;
+        text-shadow: none;
+    }
+
     .overlay a:hover, .overlay a:focus {
-        color: #B8BDB5;
+        color: #1B2617;
       }
 
     .overlaycontent {
         text-align: center;
-        padding: 20px;
+        padding: 15px;
+        margin: 10px;
         font-weight: bold;
         color: #FAF9F6;
-        text-shadow: 1px 1px 10px #1B2617;
         transition: color 0.3s
     }
     .closebtn {
@@ -249,8 +272,9 @@ a {
 /* gallerygrid */
 @media only screen and (min-width: 0px) {
     .gallerygrid {
-        display: inline-block;
+        display: grid;
         max-height: auto;
+        max-width: 100%;
         align-items: center;
         object-fit: center;
         padding: 3vw;
@@ -271,6 +295,9 @@ a {
     .boximg:hover { 
         transform: scale(1.2);
     }
+
+    .box0, .box1,.box2,.box3,.box4,.box5 ,.box6 ,.box7 ,.box8 ,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17,.box18,.box20,.box21,.box22,.box23,.box24,.box25,.box26,.box27, .box28
+    height {overflow:hidden; border-radius: 10px;}
 }
 @media only screen and (min-width: 767px) {
     .gallerygrid {
