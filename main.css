@@ -12,7 +12,7 @@ body {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 4vw;
     margin: 5% 0 5% 0;
     text-align: center;
 }
@@ -28,24 +28,27 @@ a {
         width: 100%;
         height: 50px;
         padding-top: 10px;
-        border-bottom: 1px solid rgba(0,0,0,0.5);
+        /* border-bottom: 1px solid rgba(0,0,0,0.5);
         box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-        background-color: #1B2617;
+        background-color: #1B2617; */
         border-radius: 0 0 30px 30px;
     }
 
     .navbrand {
-        width: 85%;
+        width: 70%;
         display:inline-block;
-        margin: 0;
+        margin-left: 2%;
+        margin-right: 5%;
         font-size: 10px;
+        background-color: #1B2617;
+        border-radius: 30px;
     }
 
     .navbrand h1 {
-        padding-left: 5%;
         color: #FAF9F6;
         text-shadow: 1px 1px 10px #1B2617;
         transition: color 0.3s;
+        text-align: center;
     }
 
     .navbrand h1:hover {
@@ -60,7 +63,7 @@ a {
         top: 0;
         left: 0;
         background-color: #1B2617;
-        overflow-x: hidden;
+        overflow: hidden;
         transition: 0.5s;
     }
 
@@ -93,18 +96,40 @@ a {
       }
 
       .hamburger {
-        margin-top: 5px;
-        margin-right: 5%;
+        margin-right: 4%;
+        width: 50px;
+        height: 50px;
         float: right;
         color: #FAF9F6;
         text-shadow: 1px 1px 10px #1B2617;
         transition: color 0.3s;
         cursor: pointer;
+        text-align: center;
+        background-color: #1B2617;
+        border-radius: 40px;
+        text-align: center;
       }
 
       .hamburger:hover {
         color: #B8BDB5;
       }
+
+      .hamburger i {
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        object-position: center;
+      }
+}
+
+@media only screen and (min-width: 767px) {
+    .navbrand {
+        width: 40%;
+    }
+
+    .hamburger {
+        width: 50px;
+    }
 }
 
 @media only screen and (min-width: 1030px) {
@@ -115,6 +140,7 @@ a {
     }
 
     .navbrand {
+        width: auto;
         margin-left: 5%;
         height: 50px;
         display:inline-block;
@@ -240,7 +266,7 @@ a {
     .highlighted {
         display: grid;
         max-height: 500vh;
-        padding: 10vw 3vw 0 3vw;
+        padding: 3vw 3vw 0 3vw;
         margin-bottom: 150px;
     }
 
@@ -335,7 +361,7 @@ a {
     width: auto;
     text-align: center;
     font-size: 5vw;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     height: auto;
 }
 .showcasetitle {
@@ -348,7 +374,7 @@ a {
     padding: 15px 30px 15px 30px;
     color: #FAF9F6;
     background-color: #1B2617;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }/* END highlight area */
 
 .arrowup {
