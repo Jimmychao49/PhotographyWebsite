@@ -246,13 +246,13 @@ a {
 
     .box1 {
         grid-row: 2;
-        width: 80%;
+        width: 45%;
         height: auto;
         padding-top: 10px;
-        padding-left: 40px;
+        padding-left: 20px;
         border-top: 1px solid #1B2617;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20px;
+        margin-right: 0;
         text-align: left;
         font-weight: 100;
         margin-top: 10px;
@@ -283,7 +283,7 @@ a {
         width: 90%;
         max-height: 500vh;
         padding: 0vw 3vw 0 3vw;
-        margin: 2vw auto 300px auto;
+        margin: 2vw auto 200px auto;
     }
 
     .box1 {
@@ -331,7 +331,7 @@ a {
 }
 
 .titlewrapper {
-    margin-top: 300px;
+    margin-top: 100px;
     width: auto;
     text-align: center;
     font-size: 5vw;
