@@ -39,7 +39,7 @@ a {
         display:inline-block;
         margin-left: 2%;
         margin-right: 5%;
-        font-size: 10px;
+        font-size: 8px;
         background-color: #1B2617;
         border-radius: 30px;
     }
@@ -116,7 +116,7 @@ a {
 
       .hamburger i {
         text-align: center;
-        padding: 10px;
+        padding-top: 5px;
         margin: auto;
         object-position: center;
       }
@@ -360,7 +360,6 @@ a {
     margin-top: 100px;
     width: auto;
     text-align: center;
-    font-size: 5vw;
     margin-bottom: 10px;
     height: auto;
 }
@@ -374,6 +373,7 @@ a {
     padding: 15px 30px 15px 30px;
     color: #FAF9F6;
     background-color: #1B2617;
+    font-size: 5vw;
     margin-bottom: 0;
 }/* END highlight area */
 
@@ -736,6 +736,8 @@ a {
     padding: 15px 30px 15px 30px;
     border-radius: 80px;
     margin-bottom: 0;
+    font-size: 5vw;
+
 }
 /*START placeslist area */
 @media only screen and (min-width: 0px) {
